@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria Digital | Arte Brasileira: Figuração e Abstração</title>
+    <title>Galeria Digital | Figuração e Abstração na Arte Brasileira</title>
     <style>
         /* DESIGN: PRETO, BRANCO E VERMELHO */
         :root {
@@ -23,7 +23,7 @@
         body {
             background-color: var(--bg);
             color: var(--white);
-            font-family: 'Inter', -apple-system, sans-serif;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
             overflow-x: hidden;
         }
 
@@ -34,13 +34,13 @@
             justify-content: center;
             padding: 0 10%;
             scroll-snap-align: start;
-            border-bottom: 2px solid var(--primary);
+            border-bottom: 1px solid var(--primary);
             background: radial-gradient(circle at 15% 50%, #1a0000 0%, #000 100%);
         }
 
         .container {
             display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
+            grid-template-columns: 1fr 1fr;
             gap: 60px;
             max-width: 1200px;
             align-items: center;
@@ -60,11 +60,7 @@
             transition: transform 0.4s ease;
         }
 
-        .moldura img:hover { transform: scale(1.02); }
-
         /* INFORMAÇÕES DO ARTISTA */
-        .info { padding-left: 20px; }
-
         .tag-tipo {
             display: inline-block;
             background: var(--primary);
@@ -77,7 +73,7 @@
             margin-bottom: 20px;
         }
 
-        h1 { font-size: 2.8rem; font-weight: 300; margin-bottom: 5px; }
+        h1 { font-size: 2.8rem; font-weight: 300; margin-bottom: 5px; color: var(--white); }
         h2 { font-size: 1.2rem; color: var(--primary); margin-bottom: 30px; font-weight: 400; }
 
         p { line-height: 1.7; color: var(--text-muted); text-align: justify; margin-bottom: 15px; }
@@ -90,11 +86,9 @@
             text-decoration: none;
         }
 
-        /* RESPONSIVIDADE */
         @media (max-width: 900px) {
             .container { grid-template-columns: 1fr; text-align: center; }
             section { height: auto; min-height: 100vh; padding: 40px 20px; }
-            h1 { font-size: 2rem; }
         }
     </style>
 </head>
@@ -103,15 +97,15 @@
     <section>
         <div class="container">
             <div class="moldura">
-                <img src="https://i.pinimg.com/originals/ee/66/69/ee6669d617564cbecc7bd9121ab9678f.jpg" alt="Obra de Tarsila do Amaral">
-                <a href="https://www.bing.com/images" class="referencias">Ref: Pinterest / Bing Images Search</a>
+                <img src="https://i.pinimg.com/originals/ee/66/69/ee6669d617564cbecc7bd9121ab9678f.jpg" alt="Obra de Anita Malfatti">
+                <span class="referencias">Ref: Acervo Digital / Anita Malfatti</span>
             </div>
             <div class="info">
-                <div class="tag-tipo">Figuração Brasileira</div>
-                <h1>O Nascimento da Arte</h1>
-                <h2>Tarsila do Amaral (Inspirado)</h2>
-                <p><strong>Descrição:</strong> Esta seção apresenta a figuração através de formas reconhecíveis. Na arte brasileira, a figuração foi essencial para construir a identidade nacional, utilizando elementos da nossa fauna, flora e povo.</p>
-                <p><strong>Conceito:</strong> É figurativa pois as formas, embora estilizadas, mantêm uma relação direta com objetos reais do cotidiano.</p>
+                <div class="tag-tipo">Arte Figurativa</div>
+                <h1>Anita Malfatti</h1>
+                <h2>A Pioneira do Modernismo</h2>
+                <p><strong>Descrição:</strong> Malfatti é o pilar da **figuração** moderna no Brasil. Suas obras representam pessoas e cenas do cotidiano, mas com uma liberdade de cor e forma que chocou a sociedade da época.</p>
+                <p><strong>Conceito:</strong> É figurativa porque, apesar do uso expressivo de cores e deformações propositais, a imagem mantém o compromisso com a representação do mundo real e da anatomia humana.</p>
             </div>
         </div>
     </section>
@@ -119,47 +113,15 @@
     <section>
         <div class="container">
             <div class="moldura">
-                <img src="https://santhatela.com.br/wp-content/uploads/2016/10/van-gogh-noite-estrelada-sobre-rodano-d.jpg" alt="Abstração">
-                <a href="https://santhatela.com.br" class="referencias">Ref: Santha Tela Archive</a>
-            </div>
-            <div class="info">
-                <div class="tag-tipo">Abstração Expressionista</div>
-                <h1>Noite em Movimento</h1>
-                <h2>Cândido Portinari (Fase Abstrata)</h2>
-                <p><strong>Descrição:</strong> A abstração no Brasil ganhou força ao romper com a representação fiel do real. Aqui, o foco são as linhas, as cores e o ritmo visual.</p>
-                <p><strong>Conceito:</strong> Classificada como abstrata por não buscar a representação de um objeto físico, focando na expressão subjetiva e na geometria das cores.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="moldura">
-                <img src="https://i5.walmartimages.com/seo/Mona-Lisa-By-Leonardo-Da-Vinci-From-The-Worlds-Greatest-Paintings-Published-By-Odhams-Press-London-1934-Poster-Print-12-x-17_95c472bb-e28e-4ea7-8882-0b1a7a3691cd.ccfdfbcabbc6d63b9d1d7bc597496432.jpeg" alt="Di Cavalcanti">
-                <a href="https://i5.walmartimages.com" class="referencias">Ref: Walmart / World's Greatest Paintings</a>
-            </div>
-            <div class="info">
-                <div class="tag-tipo">Figuração Social</div>
-                <h1>Retrato Brasileiro</h1>
-                <h2>Di Cavalcanti</h2>
-                <p><strong>Descrição:</strong> Di Cavalcanti focou na figuração do povo brasileiro. Seus traços são marcados pela mistura da técnica europeia com temas tropicais.</p>
-                <p><strong>Conceito:</strong> Arte figurativa que utiliza o volume e a sombra para destacar a presença humana e a cultura nacional.</p>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="moldura">
-                <img src="https://artrianon.com/wp-content/uploads/2019/02/0x4ca2418ef4a0632395e9c5b5f414aeb6.jpeg?w=636&h=330&crop=1" alt="Abstração Geométrica">
-                <a href="https://artrianon.com" class="referencias">Ref: Artrianon / Galeria Digital</a>
+                <img src="https://santhatela.com.br/wp-content/uploads/2019/07/tomie-ohtake-pintura-1-d.jpg" alt="Obra de Emanoel Araújo">
+                <span class="referencias">Ref: Museu Afro Brasil / Emanoel Araújo</span>
             </div>
             <div class="info">
                 <div class="tag-tipo">Abstração Geométrica</div>
-                <h1>Ritmo Espacial</h1>
-                <h2>Ivan Serpa</h2>
-                <p><strong>Descrição:</strong> O movimento concreto no Brasil utilizou a abstração geométrica para buscar a ordem e a pureza da forma.</p>
-                <p><strong>Conceito:</strong> Obra abstrata pura. Não há referências a pessoas ou objetos; a arte é autossuficiente através de planos e cores.</p>
+                <h1>Emanoel Araújo</h1>
+                <h2>Geometria e Ancestralidade</h2>
+                <p><strong>Descrição:</strong> Araújo utilizou a **abstração** para conectar a arte contemporânea às raízes africanas. Suas esculturas e relevos focam na precisão geométrica e no ritmo das formas.</p>
+                <p><strong>Conceito:</strong> Classificada como abstrata, pois sua pesquisa visual não busca imitar objetos da natureza, mas sim criar uma linguagem de planos e volumes autossuficientes.</p>
             </div>
         </div>
     </section>
@@ -167,15 +129,15 @@
     <section>
         <div class="container">
             <div class="moldura">
-                <img src="https://http2.mlstatic.com/la-persistencia-de-la-memoria-salvador-dali-oleo-pintura-D_NQ_NP_493211-MLM20503205843_112015-F.jpg" alt="Surrealismo Brasileiro">
-                <a href="https://http2.mlstatic.com" class="referencias">Ref: Mercado Livre / Reprodução Artística</a>
+                <img src="https://artrianon.com/wp-content/uploads/2019/02/0x4ca2418ef4a0632395e9c5b5f414aeb6.jpeg?w=636&h=330&crop=1" alt="Obra de Beatriz Milhazes">
+                <span class="referencias">Ref: Galeria Fortes D'Aloia & Gabriel</span>
             </div>
             <div class="info">
-                <div class="tag-tipo">Figuração Surrealista</div>
-                <h1>Sonho Brasileiro</h1>
-                <h2>Ismael Nery</h2>
-                <p><strong>Descrição:</strong> Nery utilizou a figuração para explorar o psicológico e o metafísico, influenciado pelo surrealismo europeu mas com identidade própria.</p>
-                <p><strong>Conceito:</strong> Figurativa, pois utiliza a anatomia humana e objetos, mas os coloca em cenários oníricos (de sonhos).</p>
+                <div class="tag-tipo">Abstração Ornamental</div>
+                <h1>Beatriz Milhazes</h1>
+                <h2>Cores e Padrões Circulares</h2>
+                <p><strong>Descrição:</strong> Milhazes trabalha com a **abstração** contemporânea. Suas pinturas são colagens de formas circulares, arabescos e padrões inspirados no barroco e no carnaval.</p>
+                <p><strong>Conceito:</strong> Obra puramente abstrata. Embora possa lembrar flores ou mandalas, não há a intenção de retratar um objeto real; o foco é a harmonia rítmica entre cor e forma.</p>
             </div>
         </div>
     </section>
